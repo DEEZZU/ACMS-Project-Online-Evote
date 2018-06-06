@@ -16,8 +16,7 @@ public class votingDao {
     
     public void createBlock(votingBean obj)
     {
-        Block B= new Block(obj.getName());
-        System.out.println("Here");
+        Block B= new Block(Integer.toString(obj.getCid()));
         NoobChain.createChain(B);
     }
 }

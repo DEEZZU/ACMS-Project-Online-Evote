@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/deeps/NetBeansProjects/EVoting/src/java/evoting/votingBean.java</file>
-            <file>file:/Users/deeps/NetBeansProjects/EVoting/web/voteHandle.jsp</file>
-            <file>file:/Users/deeps/NetBeansProjects/EVoting/src/java/noobchain/Block.java</file>
-            <file>file:/Users/deeps/NetBeansProjects/EVoting/src/java/noobchain/NoobChain.java</file>
-            <file>file:/Users/deeps/NetBeansProjects/EVoting/src/java/evoting/votingDao.java</file>
-            <file>file:/Users/deeps/NetBeansProjects/EVoting/web/index.jsp</file>
-            <file>file:/Users/deeps/NetBeansProjects/EVoting/web/voting.jsp</file>
+            <file>file:/Users/deeps/Online-Evote_Backend/EVoting/web/voteHandle.jsp</file>
+            <file>file:/Users/deeps/Online-Evote_Backend/EVoting/src/java/processing/testVid.java</file>
+            <file>file:/Users/deeps/Online-Evote_Backend/EVoting/web/AdminMainPage.jsp</file>
+            <file>file:/Users/deeps/Online-Evote_Backend/EVoting/web/voting.jsp</file>
+            <file>file:/Users/deeps/Online-Evote_Backend/EVoting/src/java/processing/fetchCandidates.java</file>
+            <file>file:/Users/deeps/Online-Evote_Backend/EVoting/src/java/processing/candidateBean.java</file>
+            <file>file:/Users/deeps/Online-Evote_Backend/EVoting/src/java/noobchain/Block.java</file>
         </group>
     </open-files>
 </project-private>

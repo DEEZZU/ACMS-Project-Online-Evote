@@ -5,24 +5,25 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="evoting.votingDao"%> 
-<%@page import="noobchain.NoobChain"%> 
+<%@page import= "evoting.votingDao"%> 
+<%@page import= "noobchain.NoobChain"%> 
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Vote Handle Page</title>
     </head>
      <body>
-        <jsp:useBean id="obj" class="evoting.votingBean"/>  
-        <jsp:setProperty property="*" name="obj"/>
+        <jsp:useBean id= "obj" class= "evoting.votingBean"/>  
+        
         <%
-            String Name=obj.getName();
-            //out.println(Name);
+            String name=request.getParameter("name");
+            //out.println(name);
+            obj.setCid(Integer.parseInt(name));
             votingDao V= new votingDao();
             V.createBlock(obj);
-            out.println("Here");
-            out.println(NoobChain.printChain());
+            //out.println("Here");
+            //out.println(NoobChain.printChain());
         %>
         
     </body>

@@ -11,15 +11,15 @@ package evoting;
  */
 public class votingBean {
     
-    String name;
+    int cid;
     
-    public void setName(String Name)
+    public void setCid(int c)
     {
-           this.name=Name;
+           this.cid=c;
     }
     
-    public String getName()
+    public int getCid()
     {   
-            return name;
+            return cid;
     }
 }
