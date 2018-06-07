@@ -93,9 +93,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#"><font color="#000000" size="3">RESULT</font></a></li>
+        <li><a href="result.jsp"><font color="#000000" size="3">RESULT</font></a></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            <li><a href="#"><font color="#000000" size="3">CANDIDATES</font></a></li> 
+            <li><a href="candidateProfile.jsp"><font color="#000000" size="3">CANDIDATES</font></a></li> 
       </ul>
      
     </div>
@@ -136,8 +136,8 @@
         <form action="/action_page.php">
             <div class="form-group" class="text-center" class="container">        
                 <div class="col-sm-offset-1 col-sm-10">
-                    <a href="voting.jsp"><button type="button" class="btn btn-primary">VOTE</button></a>&nbsp;&nbsp;&nbsp;
-                    <a href="createCampaign.jsp"><button type="button" class="btn btn-primary">CREATE CAMPAIGN</button></a>&nbsp;&nbsp;&nbsp;
+                    <a href="voting.jsp"><button type="button" class="btn btn-primary">VOTE</button></a>&nbsp;
+                    <a href="createCampaign.jsp"><button type="button" class="btn btn-primary">CREATE CAMPAIGN</button></a>&nbsp;
                     <a href="addContestant.jsp"><button type="button" class="btn btn-primary">Add Contestant</button></a>
                 </div>
             </div>

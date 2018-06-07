@@ -4,6 +4,7 @@
     Author     : deeps
 --%>
 
+<%@page import="processing.setMark"%>
 <%@page import= "java.sql.*" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 
@@ -18,6 +19,10 @@ int enterOtp=Integer.parseInt(otpValue);
 
 if(otp==enterOtp)
 {
+    int mark;
+    String v=(String)session.getAttribute("vid");
+    mark=setMark.obtainMark(v);
+    session.setAttribute("mark", mark);
     //out.print("OTP Successfully Verified");
     if(role.equals("A"))
     {

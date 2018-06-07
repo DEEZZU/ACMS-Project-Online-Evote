@@ -8,83 +8,221 @@
 <%@page import= "processing.candidateBean"%>
 <%@page import= "java.util.*" %>
 <%@page import= "processing.fetchCandidates" %>
-<!DOCTYPE html>
-<html>
-<style>
-</style>
-<title>VOTING </title>
-<meta name="viewport" content="width=50px, initial-scale=13">
-<link rel="stylesheet" href="style.css">
+
+<html lang="en">
+<head>
+  <title>VOTING </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      height : 200px;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 512px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+   .the-legend {
+    border-style: none;
+    border-width: 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+}
+.the-fieldset {
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: teal;
+      color: teal;
+      padding: 15px;
+       height: 200px; 
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 760px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
 <body>
-<%
-            ArrayList<candidateBean> List = new ArrayList<candidateBean>();
-            List=fetchCandidates.listCandidates();
-            int size;
-            size=List.size();
-%>
-
-<div class=".w3 w3-padding-48 w3-teal">
-
+    <%
+        ArrayList<candidateBean> List = new ArrayList<candidateBean>();
+        List=fetchCandidates.listCandidates();
+        int size;
+        size=List.size();
+        %>
+    
+<nav class="navbar navbar-inverse" style="background-color: teal">
+  <div class="container-fluid">
             <p>
-            <button class=" w3-button w3-white w3-padding-large">Result </button>
-            &nbsp; &nbsp; &nbsp;
-            <button class="w3-button w3-white w3-padding-large ">Candidate Profile </button>
-            </p>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+        </p>  
+            <p>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+        </p> 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                      
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="result.jsp">RESULT</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li><a href="candidateProfile.jsp">CANDIDATES</a></li>
+      </ul>
 
-</div>
+    </div>
+  </div>
+</nav>
 
+      <header style="background-color: white">
+      <div class="container text-center">
+        <h1>                                 </h1>
+        <p class="lead">                       </p>
+      </div>
+    </header>
+      <header style="background-color: white">
+      <div class="container text-center">
+        <h1>                                 </h1>
+        <p class="lead">                       </p>
+      </div>
+    </header>
+    <header style="background-color: white">
+      <div class="container text-center">
+        <h1>                                 </h1>
+        <p class="lead">                       </p>
+      </div>
+    </header>
   
-        <div class=".w3 w3-padding-64 w3-white">
-            <div class=".w3 w3-center">
-                <h1> <candidate demo></h1>	
-                <form action="voteHandle.jsp" method="post">
-                    <div style="margin-bottom:20px ;margin-left:460px ;margin-right:460px;">
-                        <div class="fieldset"  style="widht:700px" >
-                            <legend style="margin-left:200px"><h4>VOTE</h4></legend>
-                            <p style="text-align:center; "><b>KINDLY SELECT THE CANDIDATE</b></p>
-                                    <%
-                                        for(int i=0; i<size;i++){
-                                    %>
-                                    <span><input type="radio" name="name" value="<%=(List.get(i).getCid())%>"/></span>
-                                    <label style="font-size: 15px; font-weight: bold;"><%=List.get(i).getFname()%></label><br>
-                                    <%  
-                                            }
-                                    %> 
-                                    <input type="submit" value="SUBMIT">
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-                        <div class=".w3 w3-padding-48 w3-white">    
-                        </div>          
-        </div>
-<div class="footer">
-<footer> </footer>	
-
+     <header>
+      <div class="container text-center">
+        <div class="col-lg-40 mx-auto">
+<div class="mt-5 col-md-12">
+       
 </div>
+        <h1 > Welcome  to voting  </h1>
+      
+      </div>
+    </header>
+
+
+
+       <header  id="about">
+
+      <div class="container text-center"  style="width: 300px">
+        <div class="row" >
+          <div class="mt-5 col-md-20">
+        
+             <div class="col-sm-70mx-auto">
+                <h2>            </h2>
+                  <div class="form-group">
+                    <form action="voteHandle.jsp" method="post">
+                        <fieldset class="the-fieldset">
+                            <legend class="the-legend">VOTING</legend>
+
+                             <div class="col-sm-17">  
+                            
+                            <p style="text-align:center; "><b>KINDLY SELECT THE CANDIDATE</b></p>
+                            <%
+                                for(int i=0; i<size;i++){
+                                %>
+                            <span><input type="radio" name="name" value="<%=(List.get(i).getCid())%>"/></span>
+                            <label style="font-size: 15px; font-weight: bold;"><%=List.get(i).getFname()%></label><br>
+                            <%
+                                }
+                                %>
+
+                            </div>         
+                         </fieldset>
+             <div class="form-group" class="text-center">        
+                  <div class="col-sm-offset-1 col-sm-10">
+                      <input type="submit" class="btn btn-primary" value="SUBMIT">
+                  </div>
+                </div>
+    </form>
+
+ 
+          </div>
+           </div>
+          </div>
+            
+        </div>
+        
+             <div class="form-group" class="text-center" class="container">        
+                  <div class="col-sm-offset-1 col-sm-10">
+                   
+
+                  </div>
+                </div>
+    
+    
+          <div class="jumbotron " style="background-color: white">
+        <div class="col-md-2 px-0">
+          <h1 class="display-2 font-italic"></h1>
+         
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold"></a></p>
+        </div>
+      </div>
+   
+</fieldset>
+    </header>
+
+      <header style="background-color: white">
+      <div class="container text-center">
+        <h1>                                 </h1>
+        <p class="lead">                       </p>
+      </div>
+    </header>
+
+      <header style="background-color: white">
+      <div class="container text-center">
+        <h1>                                 </h1>
+        <p class="lead">                       </p>
+      </div>
+    </header>
+
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
 </body>
-</html> 
+</html>
 
-
- <?select name="name" required="required"><br>
-                                    	<option></option>
-                                        <option value="eva">EVA</option>
-                                        <option value="deepti">DEEPTI</option>
-                                        <option value="khushboo">KHUSHBOO</option>
-                                        <option></option>
-                                    </select>
-
-                                    <input type="submit" value="Submit">
-                                    <?p style="text-align:center; "><b>KINDLY SELECT THE CANDIDATE FOR VICE- PRESIDENT POST  </b></p>
-
-                                    <select name="case" required="required"><br>
-                                    	<option></option>
-                                        <option value="text">EVA</option>
-                                        <option value="text">DEEPTI</option>
-                                        <option value="text">KHUSHBOO</option>
-                                        <option></option>
-                                         <input type="submit" value="Submit">
-                                        </select>
-                                        
-                                        </?>

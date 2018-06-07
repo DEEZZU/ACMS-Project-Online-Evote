@@ -74,9 +74,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="#">Result</a></li>
-        <li><a href="#">Contestant Information</a></li>
-        <li><a href="#">ADMIN</a></li>>
+        <li><a href="result.jsp">Result</a></li>
+        <li><a href="candidateProfile.jsp">Contestant Information</a></li>
+        <li><a href="AdminMainPage.jsp">ADMIN</a></li>>
       </ul>
      <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

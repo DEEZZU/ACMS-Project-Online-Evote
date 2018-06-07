@@ -33,6 +33,8 @@
         String role = identity.identify(obj);
         session.setAttribute("session","TRUE");
         session.setAttribute("role", role);
+        String vid=request.getParameter("vid");
+        session.setAttribute("vid", vid);
         //BigInteger check = new BigInteger("0");
         //out.println(status+" "+role );
        

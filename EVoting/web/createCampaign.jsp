@@ -131,9 +131,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-        <li><a href="#"><font color="#000000" size="3">RESULT</font></a></li>
+        <li><a href="result.jsp"><font color="#000000" size="3">RESULT</font></a></li>
         <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-        <li><a href="#"><font color="#000000" size="3">CANDIDATES</font></a></li>    
+        <li><a href="candidateProfile.jsp"><font color="#000000" size="3">CANDIDATES</font></a></li>    
     </ul>
     </div>
   </div>
@@ -170,7 +170,7 @@
 
 <div id="London" class="tabcontent">
   <h3>DAY AND TIME </h3>
-  <p> DAY : WEDNESDAY</p>
+  <p> DAY : FRIDAY</p>
   <P>TIME :10:00AM - 4:00 PM </P>
   <h3> POSITION </h3>
   <p> This is for the position of  Class Representative in College </p>

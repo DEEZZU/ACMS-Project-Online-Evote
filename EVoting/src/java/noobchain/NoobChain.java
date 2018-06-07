@@ -26,11 +26,11 @@ public class NoobChain {
         {
             if(blockchain.size()-1 >=0)
             {
-                B.setHash(blockchain.get(blockchain.size()-1).hash);
+               // B.setHash(blockchain.get(blockchain.size()-1).hash);
             }
             else
             {
-                 B.setHash("0");
+                // B.setHash("0");
             }
             blockchain.add(B);	   
         }
@@ -50,16 +50,16 @@ public class NoobChain {
 		currentBlock = blockchain.get(i);
 		previousBlock = blockchain.get(i-1);
 		//compare registered hash and calculated hash:
-		if(!currentBlock.hash.equals(currentBlock.calculateHash()) ){
+		//if(!currentBlock.hash.equals(currentBlock.calculateHash()) ){
 			System.out.println("Current Hashes not equal");			
 			return false;
 		}
 		//compare previous hash and registered previous hash
-		if(!previousBlock.hash.equals(currentBlock.previousHash) ) {
+	//	if(!previousBlock.hash.equals(currentBlock.previousHash) ) {
 			System.out.println("Previous Hashes not equal");
 			return false;
 		}
 	}
-	return true;
-}
-}
+	//return true;
+//}
+//}

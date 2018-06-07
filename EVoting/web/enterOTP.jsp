@@ -100,7 +100,7 @@ pageEncoding="ISO-8859-1"%>
       <ul class="nav navbar-nav">
             <li><a href="#"><font color="#000000" size="3">RESULT</font></a></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            <li><a href="processVoterId.jsp"><font color="#000000" size="3">CANDIDATES</font></a></li>  
+            <li><a href="#"><font color="#000000" size="3">CANDIDATES</font></a></li>  
       </ul>
     </div>
   </div>

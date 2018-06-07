@@ -5,45 +5,72 @@
  */
 package noobchain;
 
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Date;
+import processing.ConnectionProvider;
 
 public class Block {
 
-	public String hash;
-	public String previousHash;
-	private String data; //our data will be a simple message.
-	private long timeStamp; //as number of milliseconds since 1/1/1970.
+	public static String merkleRoot;
+	public static String previousHash;
+	private static ArrayList<byte[]> data; //our data will be a simple message.
 
-	//Block Constructor.
-        public Block(String data)
+        
+        public static void setHash() throws SQLException
         {
-            this.data=data;
-            this.timeStamp = new Date().getTime();
+            //  previousHash = previousHash;
+            //get from database 
+            ResultSet rs = null;   
+            boolean records=false;
+            try{  
+            Connection con=ConnectionProvider.getCon();  
+            PreparedStatement ps=con.prepareStatement("select * from chain");  
+            rs=ps.executeQuery();                
+            }
+            catch(Exception e){}  
+            //return (new BigInteger("0"));
+            if (rs!= null & rs.next()!=false ) 
+                {
+                    do
+                    {
+                        previousHash = rs.getString(2);//automatically the last
+                    }
+                    while(rs.next());
+                    rs.close();
+                    rs = null; 
+                } 
+            else
+            {
+                previousHash = StringUtil.applySha256("0");
+            }
         }
         
-        public String getBlockData()
+        public static String calculateHash(ArrayList<byte[]> L) {
+        String hash = null;
+        int size;
+        size=L.size();
+        ArrayList<String> s= new ArrayList<String>();
+        for(int i=0;i<size;i++)
         {
-            return data;
+            s.add(new String(L.get(i)));
         }
-       
-	public Block(String data,String previousHash ) {
-		this.data = data;
-		this.previousHash = previousHash;
-		this.timeStamp = new Date().getTime();
-                this.hash = calculateHash(); //Making sure we do this after we set the other values.
-	}
+        hash = StringUtil.applySha256(s.get(1)+s.get(2)+s.get(3)+s.get(4)+s.get(0));
+        return hash;
+        }
         
-        public void setHash(String previousHash)
+        public static int createBlock(ArrayList<byte[]> L) throws SQLException
         {
-            this.previousHash = previousHash;
-            this.hash = calculateHash();
+            merkleRoot=calculateHash(L);
+            data=L;
+            setHash();
+            chain.insertInChain(previousHash,merkleRoot,data);
+            return 1;
         }
-        public String calculateHash() {
-	String calculatedhash = StringUtil.applySha256( 
-			previousHash +
-			Long.toString(timeStamp) +
-			data 
-			);
-	return calculatedhash;
+        
 }
-}
+

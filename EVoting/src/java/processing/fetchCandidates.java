@@ -50,4 +50,42 @@ public static ArrayList<candidateBean> listCandidates() throws SQLException{
 return List;
 }
     
+
+public static ArrayList<candidateBean> listCandidateDetails() throws SQLException{  
+
+    ArrayList<candidateBean> List=new ArrayList<candidateBean>();
+    ResultSet rs = null;    
+    boolean records=false;
+
+    try{  
+    Connection con=ConnectionProvider.getCon();  
+    PreparedStatement ps=con.prepareStatement("Select * from candidate");  
+    rs=ps.executeQuery();                
+    }
+    
+    catch(Exception e){}  
+    if (rs != null) 
+    {
+             try {
+                records=rs.next();
+
+                do{
+                    candidateBean bean=new candidateBean();
+                    bean.setCid(rs.getInt(1));
+                    bean.setFname(rs.getString(2));
+                    bean.setLname(rs.getString(3));
+                    bean.setPno(rs.getString(4));
+                    bean.setAno(rs.getString(5));
+                    bean.setSex(rs.getString(6));
+                    bean.setEmail(rs.getString(7));
+                    List.add(bean);
+                }while(rs.next());
+            }
+            catch (SQLException ex) { }
+            rs.close();
+    }
+    rs = null; 
+
+return List;
+}
 }
