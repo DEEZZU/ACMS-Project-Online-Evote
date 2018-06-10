@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add_Contestant</title>
+  <title>VOTING HANDLE</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -194,7 +194,7 @@
 
       <header style="background-color: white">
       <div class="container text-center">
-        <h1>                                 </h1>
+        <h4><a href="index.jsp">MAIN PAGE</a></h4>
         <p class="lead">                       </p>
       </div>
     </header>
@@ -371,7 +371,7 @@
 
       <header style="background-color: white">
       <div class="container text-center">
-        <h1>                                 </h1>
+        <h4><a href="index.jsp">MAIN PAGE</a></h4>
         <p class="lead">                       </p>
       </div>
     </header>

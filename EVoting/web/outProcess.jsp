@@ -16,7 +16,8 @@ int otp=(Integer)session.getAttribute("otp");
 String role=(String)session.getAttribute("role");
 String otpValue=request.getParameter("otpValue");
 int enterOtp=Integer.parseInt(otpValue);
-
+//int otp=1;
+//int enterOtp=2;
 if(otp==enterOtp)
 {
     int mark;
@@ -44,6 +45,6 @@ else
 session.invalidate();
 }
 %>
-<jsp:include page="index.jsp"></jsp:include>
+<jsp:include page="index2.jsp"></jsp:include>
 </body>
 </head>
