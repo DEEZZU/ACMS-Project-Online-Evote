@@ -11,3 +11,12 @@ elections.
 Mostly, voting system are not just limited to the task of elections, but can be useful for ecommerce sites like Amazon for product voting by the users. But that is about the future and application of this project. 
 
 ##### Scope
+
+[x] Evaluated the use of newer technologies like "BlockChain Technology" and implemented for the protecting the votes of the user. 
+[x] Worked on end to end system : front-end, back-end, DBMS etc
+[x] client ready web-app
+[x] Extended to use "OTP" for second-level authentication.
+[ ] Evaluated facial recognition as a level of authentication
+
+##### Tenets 
+
