@@ -20,3 +20,7 @@ Mostly, voting system are not just limited to the task of elections, but can be 
 
 ##### Tenets 
 
+1. Hack Proof System
+2. Instant Results
+3. No Duplicate Voters
+4. Voter Authentication
