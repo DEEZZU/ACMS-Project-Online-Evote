@@ -12,11 +12,11 @@ Mostly, voting system are not just limited to the task of elections, but can be 
 
 ##### Scope
 
-[X] Evaluated the use of newer technologies like "BlockChain Technology" and implemented for the protecting the votes of the user. 
-[X] Worked on end to end system : front-end, back-end, DBMS etc
-[X] client ready web-app
-[X] Extended to use "OTP" for second-level authentication.
-[ ] Evaluated facial recognition as a level of authentication
+- [x] Evaluated the use of newer technologies like "BlockChain Technology" and implemented for the protecting the votes of the user. 
+- [x] Worked on end to end system : front-end, back-end, DBMS etc
+- [x] client ready web-app
+- [x] Extended to use "OTP" for second-level authentication.
+- [ ] Evaluated facial recognition as a level of authentication
 
 ##### Tenets 
 
