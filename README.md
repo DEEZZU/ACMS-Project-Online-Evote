@@ -33,7 +33,7 @@ Mostly, voting system are not just limited to the task of elections, but can be 
 
 ##### PHASE 1 
 
-1. A person should be able to land on the website -[x]
+- [x] 1. A person should be able to land on the website 
 2. creation of an election campaign -[x]
 3. functionality of adding election name, candidate photos, the groups from which candidates belong etc. -[x]
 4. Voter data should be stored in a database (biometric or in other encrypted way) -[x]
