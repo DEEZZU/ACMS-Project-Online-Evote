@@ -40,7 +40,7 @@ Mostly, voting system are not just limited to the task of elections, but can be 
 - [x] 5. Voter logs in and votes (only votes stored)
 - [x] 6. Also, we should be able to store the results for each elections and candidates and retrieve it from the website itself
 
-##### PHASE 2 
+##### PHASE 2 (FUTURE WORK)
 (yet to be implemented)
 1. functionality of creating multi seat election in which group (party) having won max no. of seats will win the election
 2. election campaign generator should also be able to support max majority a party needs to have
