@@ -48,5 +48,19 @@ Mostly, voting system are not just limited to the task of elections, but can be 
 
 ----
 
+## Using this Repo
+
+Enviroment required :
+1. JDK 8 or above
+2. Tomcat or any other server. 
+3. Netbeans or Eclipse 
+4. MySQL
+
+Run :
+1. Make sure to setup your server and download the whole project. 
+2. Make the change in Provider.java file and set the connection url, user name and password
+3. Make tables accordingly //(details below)
+4. Run the whole project using netbeans/eclipse. 
+
 
 
