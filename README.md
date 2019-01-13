@@ -58,7 +58,7 @@ Enviroment required :
 
 Run :
 1. Make sure to setup your server and download the whole project. 
-2. Make the change in Provider.java file and set the connection url, user name and password
+2. Make the change in ACMS-Project-Online-Evote/EVoting/src/java/processing/Provider.java file and set the connection url, user name and password
 3. Make tables accordingly //(details below)
 4. Run the whole project using netbeans/eclipse. 
 
